@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	color: #1e293b;
+	background: #f8fafc;
+}
+
+main {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 24px;
+}
+
+.table-scroll {
+	overflow-x: auto;
+}
+
+.table-scroll:focus-visible {
+	outline: 3px solid #2563eb;
+	outline-offset: 4px;
+}
+
+table {
+	width: 100%;
+	min-width: 760px;
+	border-collapse: collapse;
+	background: white;
+}
+
+caption {
+	padding: 16px 0;
+	text-align: left;
+	font-weight: 600;
+}
+
+th,
+td {
+	padding: 12px 16px;
+	border-bottom: 1px solid #e2e8f0;
+	text-align: left;
+}
+
+th {
+	background: #e2e8f0;
+}
