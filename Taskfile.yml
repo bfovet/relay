@@ -1,0 +1,28 @@
+version: "3"
+
+tasks:
+  dev:
+    desc: Start the development server
+    cmds:
+      - npx vite
+
+  typecheck:
+    desc: Check TypeScript types
+    cmds:
+      - npx tsc
+
+  build:
+    desc: Check types and build for production
+    cmds:
+      - task: typecheck
+      - npx vite build
+
+  format:
+    desc: Format source files
+    cmds:
+      - npx biome format --write .
+
+  check:
+    desc: Check formatting, lint rules, and imports
+    cmds:
+      - npx biome check .
